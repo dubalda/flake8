@@ -1,6 +1,12 @@
 # flake8
 flake8 for littleworld ci
 
+Flake8 is a wrapper around these tools:
+
+- PyFlakes
+- pycodestyle
+- Ned Batchelder's McCabe script
+
 ## use
 ```
 docker run --rm -it laptevss/flake8
@@ -55,12 +61,13 @@ flake8:
     when: always
 ```
 
-## badges GitLab CI for LittleWorld
-image:
-```
-https://gitlab.com/%{project_path}/-/jobs/artifacts/%{default_branch}/raw/public/badges/flake8.svg?job=flake8
-```
+## badges gitlab ci
 link:
 ```
 https://gitlab.com/%{project_path}/-/jobs/artifacts/%{default_branch}/file/public/lint/index.html?job=flake8
 ```
+image:
+```
+https://gitlab.com/%{project_path}/-/jobs/artifacts/%{default_branch}/raw/public/badges/flake8.svg?job=flake8
+```
+
